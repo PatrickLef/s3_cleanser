@@ -46,7 +46,7 @@ Capistrano::Configuration.instance.load do
         run "mkdir -p #{shared_path}/config"
         
         # Load template, replace variables and store the file
-        template = ERB.new(File.read(File.dirname(__FILE__) + '/config/settings.yml.erb'))
+        template = ERB.new(File.read(File.dirname(__FILE__) + '/settings.yml.erb'))
         put template.result(binding), "#{shared_path}/config/settings.yml"
         
       end
