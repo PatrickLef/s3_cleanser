@@ -66,4 +66,4 @@ starting_marker = ARGV[2] || ''
 # Start deleting objects
 LOG.info "Starting cleaning bucket #{bucket} from timestamp #{timestamp}"
 nr_of_objects_deleted = clean_bucket bucket, timestamp, starting_marker
-LOG.info "Finished cleaning bucket #{bucket} from timestamp #{timestamp}. #{nr_of_objects_deleted} where deleted"
+LOG.info "Finished cleaning bucket #{bucket} from timestamp #{timestamp}. #{nr_of_objects_deleted} were deleted"
